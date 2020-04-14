@@ -144,7 +144,7 @@
                                 callback(backData)
                             } else if (backData.data.data.length == 0 && currentPage == 1) {
                                 $('#pagination-demo').hide().next('p').show()
-                            }else if(backData.data.totalPage == currentPage-1 && backData.data.data.length == 0) {
+                            } else if (backData.data.totalPage == currentPage - 1 && backData.data.data.length == 0) {
                                 currentPage -= 1;
                                 //重新的绘制分页结构
                                 $('#pagination').twbsPagination('changeTotalPages', backData.data.totalPage, currentPage);
@@ -214,10 +214,9 @@
                 }
             })
 
-             
             //五:点击 发表文章 按钮
             //左边导航栏,导航到发表文章那里. 
-            $('#release_btn').on('click',function(){
+            $('#release_btn').on('click', function () {
                 parent.$('ul.level02>li:eq(1)').click();
             });
 
